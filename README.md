@@ -16,7 +16,7 @@
 > This project was developed with python3. The main idea is to get a String which tells Ash's route and set the amount of Pokemons that he captured, knowing that is only one Pokemon in each coordinate
 
 ## 	:rocket: Run project
-> For execute the aplication correctly, is important have and follow the requirements bottom.
+> To run the aplication is important:
 
 ### Requirements
  - Git
@@ -25,7 +25,13 @@
 > After complete the requirements at top, clone the project to your directory and run following commands.
 
 ```bash
- python3 src/main.py
+ git clone git@github.com:dassaev-lima/pokemon_capture_challange.git
+ 
+ cd pokemon_capture_challange/src/
+```
+```python3
+
+ python3 main.py
 
 ```
 ## Run tests
