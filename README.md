@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Get Pokemons</h1>
   <span>
-    A challange for the job opportunity of software engineer in Premium Minds
+    A challenge to the job opportunity of software engineer in Premium Minds
   </span>
 </div>
   
