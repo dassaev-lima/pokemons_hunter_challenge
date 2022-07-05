@@ -13,14 +13,21 @@ class Ash:
             else:
                 self.actual_position[1] -= 1
             
-            self.pokemon_houses_visited.add(tuple(self.actual_position))
+            """ self.pokemon_houses_visited.add(tuple(self.actual_position)) """
+            actual_size_list_houses_visitadas = self.add_position_in_houses_visited()
         else:
             if direction == 'L':
                 self.actual_position[0] += 1
             else:
                 self.actual_position[0] -= 1
-            self.pokemon_houses_visited.add(tuple(self.actual_position))
+            """ self.pokemon_houses_visited.add(tuple(self.actual_position)) """
+            actual_size_list_houses_visitadas = self.add_position_in_houses_visited()
         
+        """ return len(self.pokemon_houses_visited) """
+        return actual_size_list_houses_visitadas, self.actual_position
+
+    def add_position_in_houses_visited(self):
+        self.pokemon_houses_visited.add(tuple(self.actual_position))
         return len(self.pokemon_houses_visited)
 
     def has_pokemon(self,actual_size_list_houses_visitadas):

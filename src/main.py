@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     initial_time = time.time()
     for direction in moviments.upper():
-        actual_size_list_houses_visitadas = ash.to_walk(direction)
+        actual_size_list_houses_visitadas, actual_position = ash.to_walk(direction)
         ash.has_pokemon(actual_size_list_houses_visitadas)
     
     print(f'The Ash captured {ash.captured_pokemons} pokemons')
