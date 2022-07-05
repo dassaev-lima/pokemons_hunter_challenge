@@ -5,15 +5,15 @@
   </span>
 </div>
   
-## :clipboard: Índex
+## :clipboard: Index
 - [About project](#spiral_notepad-about-project)
 - [Run project](#rocket-run-project)
-- - [Pré-requisitos](#requirements)
+- - [Requeriments](#requirements)
 - [Run tests](#run-tests)
 
 ## :spiral_notepad:About project
 
-> The project was development using a language of programation python
+> This project was developed with python3. The main idea is to get a String which tells Ash's route and set the amount of Pokemons that he captured, knowing that is only one Pokemon in each coordinate
 
 ## 	:rocket: Run project
 > For execute the aplication correctly, is important have and follow the requirements bottom.
@@ -22,7 +22,7 @@
  - Git
  - Python3
 
-> After complete the requirements top, clone the project to your workspace, go to folder and execute the comands bottom.
+> After complete the requirements at top, clone the project to your directory and run following commands.
 
 ```bash
  python3 src/main.py
