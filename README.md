@@ -9,7 +9,7 @@
 - [About project](#spiral_notepad-about-project)
 - [Run project](#rocket-run-project)
 - - [Requeriments](#requirements)
-- [Run tests](#run-tests)
+- [Run tests](#test_tube-run-tests)
 
 ## :spiral_notepad:About project
 
@@ -34,7 +34,7 @@
  python3 main.py
 
 ```
-## Run tests
+## :test_tube: Run tests
 
 ```bash
  python3 -m unittest -v
