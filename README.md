@@ -16,7 +16,7 @@
 > This project was developed with python3. The main idea is to get a String which tells Ash's route and set the amount of Pokemons that he captured, knowing that is only one Pokemon in each coordinate
 
 ## 	:rocket: Run project
-> To run the aplication is important:
+> The system used to run and test the application was the linux ubuntu release 20.04:
 
 ### Requirements
  - Git
