@@ -1,11 +1,11 @@
 class Ash:
     def __init__(self):
         self.captured_pokemons = 1
-        self.pokemon_houses_visited = set()
+        self.houses_visited = {(0, 0)}
         self.actual_position = [0, 0]
-        self.list_size_houses_visited = 1
+        self.list_size_visited_houses = 1
         
-    def to_walk(self,direction):
+    def walk(self,direction):
         """walk a house"""
         if direction == 'N' or direction == 'S':
             if direction == 'N':
@@ -13,29 +13,26 @@ class Ash:
             else:
                 self.actual_position[1] -= 1
             
-            """ self.pokemon_houses_visited.add(tuple(self.actual_position)) """
-            actual_size_list_houses_visitadas = self.add_position_in_houses_visited()
+            self.houses_visited.add(tuple(self.actual_position))
         else:
             if direction == 'L':
                 self.actual_position[0] += 1
             else:
                 self.actual_position[0] -= 1
-            """ self.pokemon_houses_visited.add(tuple(self.actual_position)) """
-            actual_size_list_houses_visitadas = self.add_position_in_houses_visited()
+            self.houses_visited.add(tuple(self.actual_position))
         
-        """ return len(self.pokemon_houses_visited) """
-        return actual_size_list_houses_visitadas, self.actual_position
+        return len(self.houses_visited), self.actual_position
 
-    def add_position_in_houses_visited(self):
-        self.pokemon_houses_visited.add(tuple(self.actual_position))
-        return len(self.pokemon_houses_visited)
-
-    def has_pokemon(self,actual_size_list_houses_visitadas):
+    def has_pokemon(self,current_size_list_visited_houses):
         """ Check if it exists in actual position """
-        if actual_size_list_houses_visitadas > self.list_size_houses_visited:
+        if current_size_list_visited_houses > self.list_size_visited_houses:
             self.capture_pokemon()
-            self.list_size_houses_visited = actual_size_list_houses_visitadas
+            self.list_size_visited_houses = current_size_list_visited_houses
+        
+        return self.captured_pokemons
     
     def capture_pokemon(self):
         """ Increase one in quantity of captured pokemons """
         self.captured_pokemons += 1
+    
+    
