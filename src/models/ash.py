@@ -2,26 +2,26 @@ class Ash:
     def __init__(self):
         self.captured_pokemons = 1
         self.houses_visited = {(0, 0)}
-        self.actual_position = [0, 0]
+        self.current_position = [0, 0]
         self.list_size_visited_houses = 1
         
     def walk(self,direction):
         """walk a house"""
         if direction == 'N' or direction == 'S':
             if direction == 'N':
-                self.actual_position[1] += 1
+                self.current_position[1] += 1
             else:
-                self.actual_position[1] -= 1
+                self.current_position[1] -= 1
             
-            self.houses_visited.add(tuple(self.actual_position))
+            self.houses_visited.add(tuple(self.current_position))
         else:
             if direction == 'L':
-                self.actual_position[0] += 1
+                self.current_position[0] += 1
             else:
-                self.actual_position[0] -= 1
-            self.houses_visited.add(tuple(self.actual_position))
+                self.current_position[0] -= 1
+            self.houses_visited.add(tuple(self.current_position))
         
-        return len(self.houses_visited), self.actual_position
+        return len(self.houses_visited), self.current_position
 
     def has_pokemon(self,current_size_list_visited_houses):
         """ Check if it exists in actual position """
