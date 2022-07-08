@@ -8,3 +8,4 @@ class TestGame(unittest.TestCase):
         self.assertEqual(game.start('L'), 2)
         self.assertEqual(game.start('NLSO'), 4)
         self.assertEqual(game.start('NSNSNSNSNS'), 2)
+        self.assertEqual(game.start('NLSOONL'), 6)
