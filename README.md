@@ -25,9 +25,9 @@
 > After complete the requirements at top, clone the project to your directory and run following commands.
 
 ```bash
- git clone git@github.com:dassaev-lima/pokemon_capture_challange.git
+ git clone git@github.com:dassaev-lima/pokemons_hunter_challenge.git
  
- cd pokemon_capture_challange/src/
+ cd pokemons_hunter_challenge/src/
 ```
 ```python3
 
