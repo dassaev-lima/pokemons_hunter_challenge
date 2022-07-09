@@ -9,4 +9,5 @@ class TestAsh(unittest.TestCase):
         self.assertEqual(ash.walk('L'), (3,[1,1]))
         self.assertEqual(ash.walk('S'), (4,[1,0]))
         self.assertEqual(ash.walk('O'), (4,[0,0]))
-        self.assertEqual(ash.walk('0'), (5,[-1,0]))
+        self.assertEqual(ash.walk('G'), (4,[0,0]))
+        self.assertEqual(ash.walk('O'), (5,[-1,0]))
