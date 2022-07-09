@@ -7,19 +7,20 @@ class Ash:
         
     def walk(self,direction):
         """walk a house"""
-        if direction == 'N' or direction == 'S':
-            if direction == 'N':
-                self.current_position[1] += 1
+        if direction in 'NSLO':
+            if direction == 'N' or direction == 'S':
+                if direction == 'N':
+                    self.current_position[1] += 1
+                else:
+                    self.current_position[1] -= 1
+                
+                self.houses_visited.add(tuple(self.current_position))
             else:
-                self.current_position[1] -= 1
-            
-            self.houses_visited.add(tuple(self.current_position))
-        else:
-            if direction == 'L':
-                self.current_position[0] += 1
-            else:
-                self.current_position[0] -= 1
-            self.houses_visited.add(tuple(self.current_position))
+                if direction == 'L':
+                    self.current_position[0] += 1
+                else:
+                    self.current_position[0] -= 1
+                self.houses_visited.add(tuple(self.current_position))
         
         return len(self.houses_visited), self.current_position
 
