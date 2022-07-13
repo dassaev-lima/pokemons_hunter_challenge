@@ -1,5 +1,6 @@
 <div align="center">
-<img src="https://user-images.githubusercontent.com/48656494/177844249-81ff81f9-3c23-4e2c-a1b3-eb886a784cab.png"/><br>
+<img src="https://user-images.githubusercontent.com/48656494/178805488-6dcbbe57-4e4f-49a4-8708-1d0f9609b815.png" heigth="200px" width="200px"/><br>
+<h1> Poké Hunter</h1>
   <span>
     A challenge to the job opportunity of software engineer in Premium Minds
   </span><br><br>
