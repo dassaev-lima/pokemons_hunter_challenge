@@ -1,0 +1,4 @@
+[tool.black]
+line-length = 88  # Define o comprimento máximo de linha
+target-version = ['py39']  # Define a versão alvo do Python
+skip-string-normalization = true  # Não altera aspas simples para duplas
