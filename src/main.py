@@ -19,7 +19,7 @@ Data: 23/08/2024
 Versão: 1.0
 """
 
-from models.game import Game
+from .models.game import Game
 
 if __name__ == "__main__":
     route = input("input the route made by Ash: \n")
