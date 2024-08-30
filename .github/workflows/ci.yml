@@ -22,3 +22,7 @@ jobs:
     - name: Check code smell
       run: |
         pylint **/*.py
+
+    - name: Check circular reference
+      run: |
+        pycycle --here
