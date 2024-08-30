@@ -1,1 +1,2 @@
 pylint==3.2.6
+pycycle
