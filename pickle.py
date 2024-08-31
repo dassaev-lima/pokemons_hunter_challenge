@@ -1,5 +1,6 @@
-import pickle # nosec
+import pickle  # nosec
 import hashlib
+
 
 def get_secret_password():
     # Simulação de recuperação de senha secreta (pode ser obtida de um serviço seguro ou de uma variável de ambiente)
@@ -7,6 +8,7 @@ def get_secret_password():
     if not secret_password:
         raise ValueError('SECRET_PASSWORD não configurada')
     return secret_password
+
 
 def login(username, password):
     secret_password = get_secret_password()
@@ -18,6 +20,7 @@ def login(username, password):
         print('Login successful')
     else:
         print('Login failed')
+
 
 if __name__ == '__main__':
     login('admin', 'secret123')
