@@ -26,3 +26,7 @@ jobs:
     - name: Check circular reference
       run: |
         pycycle --here
+
+    - name: Check encrypted password
+      run: |
+        bandit -r .
