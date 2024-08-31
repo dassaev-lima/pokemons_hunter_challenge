@@ -21,12 +21,12 @@ jobs:
     
     - name: Check code smell
       run: |
-        pylint **/*.py
+        pylint **/*.pygit,
 
     - name: Check circular reference
       run: |
         pycycle --here
 
-    - name: Check encrypted password
+    - name: Check encrypted password and sql injection
       run: |
         bandit -r .
