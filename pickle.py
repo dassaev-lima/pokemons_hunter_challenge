@@ -9,7 +9,7 @@ def get_secret_password():
     return secret_password
 
 def login(username, password):
-     secret_password = get_secret_password()
+    secret_password = get_secret_password()
 
     # Verifica se o hash da senha fornecida coincide com o hash armazenado da senha secreta
     hashed_password = hashlib.sha256(password.encode()).hexdigest()
