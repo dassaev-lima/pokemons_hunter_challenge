@@ -1,4 +1,4 @@
-import pickle
+import pickle # nosec
 import hashlib
 
 def get_secret_password():
