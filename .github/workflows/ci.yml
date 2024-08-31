@@ -27,6 +27,6 @@ jobs:
       run: |
         pycycle --here
 
-    - name: Check encrypted password
+    - name: Check encrypted password and sql injection
       run: |
         bandit -r .
