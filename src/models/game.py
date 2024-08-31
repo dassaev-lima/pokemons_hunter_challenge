@@ -1,8 +1,9 @@
 from .ash import Ash
 
+
 class Game:
 
-    def start(self,route):
+    def start(self, route):
         if route == '':
             return 'You not walked, but captured 1 pokemon in your current position'
         else:
