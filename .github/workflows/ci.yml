@@ -30,3 +30,7 @@ jobs:
     - name: Check encrypted password and sql injection
       run: |
         bandit -r .
+    
+    - name: Check coding standard
+      run: |
+        black --check .
