@@ -13,4 +13,3 @@ class Game:
                 ash.has_pokemon(current_size_list_visited_houses)
 
             return ash.captured_pokemons
-            
